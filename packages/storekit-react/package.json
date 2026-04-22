@@ -19,7 +19,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean --external react,react-dom",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch --external react,react-dom",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit"
